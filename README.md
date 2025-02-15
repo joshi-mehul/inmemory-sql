@@ -1,51 +1,20 @@
-# React + TypeScript + Vite
+*Overview*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+a web-based application capable of running SQL queries and displaying the results of said query. tried providing it a prompt interface
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*The JavaScript framework you chose, along with any major plugins or packages you installed.*
 
-## Expanding the ESLint configuration
+The project is build with React and SQL.JS
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+*The page load time of your application, and how you measured this time.*
 
-- Configure the top-level `parserOptions` property like this:
+<img width="1500" alt="Screenshot 2025-02-15 at 11 19 36 PM" src="https://github.com/user-attachments/assets/99740cc7-a54b-442d-8788-0b15e33afe93" />
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+*Demo*
+https://inmemory-sqlite.netlify.app/
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+*Demo Video*
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+https://github.com/user-attachments/assets/bdcea51f-f6bc-42d0-974d-31ce35999e0a
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# inmemory-sql
