@@ -1,0 +1,132 @@
+:root {
+  --font-family: Arial, sans-serif;
+  --max-width: 80vw;
+  --padding: 20px;
+  --border-color: #ccc;
+  --border-radius: 5px;
+  --base-margin: 8px;
+  --background-color: #f1f1f1;
+  --query-background-color: #e1f5fe;
+  --result-background-color: #e8f5e9;
+  --button-background-color: #007bff;
+  --button-hover-color: #0056b3;
+  --table-border-color: #ccc;
+  --table-header-background-color: #f2f2f2;
+  --table-padding: 8px;
+  --suggestion-background-color: #fff;
+  --suggestion-hover-background-color: #e1f5fe;
+
+}
+
+.app {
+  font-family: var(--font-family);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--padding);
+}
+
+h1 {
+  text-align: center;
+}
+
+.chat-container {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+}
+
+.query {
+  background-color: var(--query-background-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  width: 80%;
+  float: right;
+  margin-bottom: var(--base-margin);
+}
+
+.result {
+  background-color: var(--result-background-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  width: 80%;
+  float: left;
+  margin-bottom: var(--base-margin);
+}
+
+.editor-container {
+  position: relative;
+}
+
+.editor {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--suggestion-background-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: var(--suggestion-hover-background-color);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--button-background-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid var(--table-border-color);
+  padding: var(--table-padding);
+  text-align: left;
+}
+
+th {
+  background-color: var(--table-header-background-color);
+}
